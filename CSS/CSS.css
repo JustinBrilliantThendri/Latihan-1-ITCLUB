@@ -1,0 +1,124 @@
+body{
+    font-family : calibri;
+    background-image : linear-gradient(135deg, blue, lightblue);
+    background-repeat : no-repeat;
+    background-attachment : fixed;
+}
+
+.container{
+    position : absolute;
+    top : 0;
+    left : 0;
+    text-align : center;
+    width : 100%;
+    padding-top : 17.5px;
+}
+
+.pic, h1, p, button, .icon, .pp, .container{
+    transition : 0.5s;
+}
+
+.pic{
+    margin-left : auto;
+    margin-right : auto;
+    border : 2px solid black;
+    width : 300px;
+    height : 300px;
+    overflow : hidden;
+    border-radius : 50%;
+}
+
+.pic2{
+    position : absolute;
+    top : 5px;
+    right : 5px;
+}
+
+.pp{
+    width : 300px;
+    height : 300px;
+}
+
+.pic:hover, button:active{
+    box-shadow : 1px 1px 3px black;
+}
+
+h1:hover, p:hover{
+    letter-spacing : 2px;
+}
+
+p{
+    font-size : 25px;
+    font-weight : bold;
+    margin-left : auto;
+    margin-right : auto;
+    width : 175px;
+}
+
+h1{
+    margin-left : auto;
+    margin-right : auto;
+    width : 425px;
+}
+
+.bio{
+    margin-top : 35px;
+}
+
+td{
+    padding : 0px 17.5px;
+}
+
+.icon{
+    width : 30px;
+    height : 30px;
+}
+
+.icon:hover{
+    transform : scale(1.125);
+}
+
+.sosmed{
+    margin-left : auto;
+    margin-right : auto;
+    text-align : center;
+    width : 200px;
+}
+
+.btn{
+    margin-top : 30px;
+}
+
+button{
+    width : 175px;
+    height : 30px;
+    font-weight : bold;
+    font-size : 18px;
+    border-radius : 25px;
+    background-color : transparent;
+}
+
+button:hover{
+    transform : scale(1.05);
+}
+
+@media screen and (max-width : 550px){
+    .pp, .pic{
+        width : 250px;
+        height : 250px;
+    }
+    h1{
+        font-size : 27.5px;
+        width : 350px
+    }
+    p{
+        font-size : 20px;
+        width : 125px;
+    }
+    h1:hover, p:hover{
+        letter-spacing : 1px;
+    }
+    .container{
+        padding-top : 50px;
+    }
+}
